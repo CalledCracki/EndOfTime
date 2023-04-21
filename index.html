@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>End of Time countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">End of Time countdown</h1>
+    <div id="countdown">
+        <span id="days"></span>
+        <span id="hours"></span>
+        <span id="minutes"></span>
+        <span id="seconds"></span>
+    </div>
+    <p id="countdown-text"></p>
+    <p id="additional-text"><u>What does this mean?</u></p>
+    <div id="additional-text-content" class="hidden">
+        <p>The way computer systems store and represent time is using the Unix time system. Since January 1, 1970, the standard for representing time in Unix systems has been to use a signed 32-bit integer, which can hold a range of values from -2,147,483,648 to +2,147,483,647.</p>
+        <p>This means that the Unix time system can represent any point in time from January 1, 1970, to some time in January 2038. However, on January 19, 2038, at 3:14:08 UTC, any computer system that stores Unix time in a 32-bit signed variable will experience what's called an "overflow" or "wraparound" error.</p>
+        <p>This happens because the maximum value that can be represented by a 32-bit signed integer is reached at this time, causing the system to "jump back" to the minimum value and start counting time from there. This means that any system using Unix time that relies on a 32-bit signed variable will not be able to accurately represent dates and times beyond this point.</p>
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

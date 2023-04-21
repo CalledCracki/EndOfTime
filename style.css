@@ -1,0 +1,97 @@
+/* Set the background color and font family */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the title */
+.title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style the countdown */
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+#countdown span {
+    font-size: 5em;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Style the countdown text */
+#countdown-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+#additional-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+  }
+
+#additional-text-content {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+
+    #countdown span {
+        font-size: 3em;
+    }
+
+    #countdown-text {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    #countdown span {
+        font-size: 2em;
+    }
+
+    #countdown-text {
+        font-size: 0.8em;
+    }
+}
